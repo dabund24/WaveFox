@@ -33,16 +33,18 @@ and
             
             .tabbrowser-tab[visuallyselected] .tab-background
             {
-                background-image: linear-gradient(to bottom, var(--toolbar-bgcolor), var(--toolbar-bgcolor)) !important;
+                background-image: linear-gradient(to bottom, var(--toolbox-bgcolor), var(--toolbox-bgcolor)) !important;
             }
         }
-
-        .tabbrowser-tab[visuallyselected] .tab-background,
-        #nav-bar,
-        #nav-bar::before,
+        
+        body,
         #PersonalToolbar
         {
-            background-color: color-mix(in srgb, var(--toolbar-bgcolor) var(--toolbar-transparency-level), transparent) !important;
+            background-color: color-mix(in srgb, var(--toolbox-bgcolor) var(--toolbar-transparency-level), transparent) !important;
+        }
+        
+        #browser {
+            background-color: transparent !important;
         }
     }
 }
